@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,800;1,500&family=Poppins:wght@100;300;400;500;700;800&display=swap');
+
+* {
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'open sans', sans-serif;
+}
+[light] body {
+    background: #f5f6fa;
+}
+[light] .hero {
+    width: 100%;    
+    background: #f5f6fa;
+    background-size: cover;
+    background-position: center;
+    position: relative; 
+    overflow: hidden;
+    height: 200vh;   
+}
+/* ---------------------------------leftside------------- */
+[light] .wrapper {
+    flex-basis: 17%;
+}
+[light] .wrapper .sidebar {
+    background: #f5f6fa;
+    position: fixed;
+    top: 190px;
+    left: 0;
+    width: 17%;
+    height: 100%;    
+    border-right: 12px solid rgb(216, 229, 248);   
+}
+[light] .profile {
+    position: fixed;
+    width: 17%;
+    background: rgb(40, 41,123);
+    border-right: 1px solid #f5f6fa;       
+}
+
+[light] .wrapper .profile img {
+    display: block;
+    width: 100%;
+    height: 190px;    
+    margin: 0 auto;
+}
+
+[light] .wrapper .sidebar ul li a {
+    display: block;
+    padding: 18px 30px;
+    border-bottom: 1px solid #f5f6fa;
+    font-size: 16px;
+    position: relative;
+    color: rgb(40, 41,123);
+}
+[light] .wrapper .sidebar ul li a .icon {
+    width: 30px;
+    display: inline-block;
+}
+[light] .wrapper .sidebar ul li a:hover,
+.wrapper .sidebar ul li a.active {
+    color: rgb(40, 41,123);
+    background: rgb(216, 229, 248);    
+}
+[light] .wrapper .sidebar ul li a:hover .icon,
+.wrapper .sidebar ul li a:active .icon {
+    color: rgb(40, 41,123);
+} 
+[light] .wrapper .sidebar ul li a:hover::before,
+.wrapper .sidebar ul li a:active::before {
+    display: block;
+}
+[light] .container {   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;    
+}
+
+/* -------------------------------------------reviews-------------------------------*/
+[light] .container2 {
+    flex-basis: 83%; 
+    display: inline-block;  
+    color: #05060c;   
+}
+[light] .testimonials {    
+    margin: 95px auto;
+    width: 80%;    
+}
+[light] .testimonials h1 {
+    text-align: center;
+    font-size: 42px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px #05060c;
+    background: url(back1.png); 
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 20s linear infinite;   
+}
+@keyframes back {
+    100% {
+        background-position: 2000px 0;
+    }
+}    
+
+[light] .testimonials h3 {
+    font-size: 26px;
+    text-align: center;
+}
+[light] .testimonials h1::after {
+    content: '';
+    background: rgb(40, 41,123);
+    display: block;
+    height: 3px;
+    width: 170px;
+    margin: 20px auto 5px;
+}
+[light] .testimonials .row {
+    margin-top: 30px;
+}
+[light] .testimonials p {
+    text-align: center;
+    font-size: 23px;
+    margin-top: 20px;
+}
+[light] .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px auto;
+    padding: 30px 0;
+    justify-content: space-between;
+}
+[light] .profileReview {
+    margin: 40px 0;
+    padding: 50px 30px 10px;
+    background-color: rgb(216, 229, 248);    
+    width: 500px; 
+    position: relative;   
+    border-radius: 10px;
+}
+
+[light] blockquote {
+    font-size: 18px;
+    line-height: 38px;
+    text-align: left;
+    margin: 30px 0;
+    text-indent: 38px;
+}
+[light] .fa-quote-left {    
+    font-size: 40px;
+    color: rgb(40, 41,123);    
+    position: absolute;
+    top: 20px;
+    left: 30px;
+           
+}
+[light] .fa-quote-right {
+    font-size: 40px;
+    color: rgb(40, 41,123);
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+}
+[light] .profileReview:hover {
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
+}
+[light] .line-1 {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    background: rgb(40, 41,123);
+}
+[light] .line-2 {
+    width: 80px;
+    height: 1px;
+    display: inline-block;
+    background: rgb(40, 41,123);
+}
+[light] .line-3 {
+    width: 60px;
+    height: 1px;
+    display: inline-block;
+    background: rgb(40, 41,123);
+}
+[light] .line {
+    line-height: 8px;
+    position: absolute;
+    top: 0;
+    left: 0;    
+}
+[light] .topHead {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+[light] .logoMeduska {
+    display: none;
+}
+[light] #iconThemeSun {
+    display: none;
+}
+[light] .iconTheme {
+    width: 30px;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0; 
+    color: rgb(40, 41,123);         
+}
+.bubbles {
+    display: none;
+}

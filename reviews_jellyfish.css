@@ -1,0 +1,257 @@
+/*
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,800;1,500&family=Poppins:wght@100;300;400;500;700;800&display=swap');
+
+* {
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'open sans', sans-serif;
+}
+
+[medusa] .hero {
+    width: 100%;    
+    background-image: url(pictures/animal-2807.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative; 
+    overflow: hidden; 
+    height: 200vh;  
+}
+
+/* ---------------------------------leftside------------- */
+[medusa] .wrapper {
+    flex-basis: 17%;   
+}
+[medusa] .wrapper .sidebar {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7));
+    position: fixed;
+    top: 190px;
+    left: 0;
+    width: 17%;
+    height: 100%;    
+    border-right: 1px solid #f5f6fa;     
+}
+
+[medusa] .wrapper .profile img {
+    display: block;
+    width: 100%;
+    height: 190px;    
+    margin: 0 auto;    
+}
+[medusa] .profile {
+    position: fixed;
+    width: 17%;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7));
+    border-right: 1px solid #f5f6fa;  
+}
+[medusa] .wrapper .sidebar ul li a {
+    display: block;
+    padding: 18px 30px;
+    border-bottom: 1px solid #f5f6fa;
+    font-size: 16px;
+    position: relative;
+    color: #f5f6fa;    
+}
+
+[medusa] .wrapper .sidebar ul li:first-child {
+    border-top: 1px solid #f5f6fa;
+}
+[medusa] .wrapper .sidebar ul li a .icon {
+    width: 30px;
+    display: inline-block;
+}
+[medusa] .wrapper .sidebar ul li a:hover,
+[medusa]  .wrapper .sidebar ul li a.active {
+    color: #05060c;
+    background: #f5f6fa; 
+    border-bottom: 1px solid #05060c;   
+}
+[medusa] .wrapper .sidebar ul li a:hover .icon,
+.wrapper .sidebar ul li a:active .icon {
+    color: #05060c;
+    
+} 
+[medusa] .wrapper .sidebar ul li a:hover::before,
+ .wrapper .sidebar ul li a:active::before {
+    display: block;
+    
+}
+[medusa] .container {    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* -------------------------------------------reviews-------------------------------*/
+/*
+[medusa] .container2 {
+    flex-basis: 83%;  
+}
+[medusa] .testimonials {    
+    margin: 95px auto;
+    width: 80%;    
+}
+[medusa] .testimonials h1 {
+    text-align: center;
+    font-size: 42px;
+    padding-bottom: 10px; 
+    color: #f5f6fa;   
+}
+[medusa] .testimonials h3 {
+    font-size: 26px;
+    text-align: center;
+}
+[medusa] .testimonials h1::after {
+    content: '';
+    background: #f5f6fa;
+    display: block;
+    height: 3px;
+    width: 170px;
+    margin: 20px auto 5px;
+}
+[medusa] .testimonials .row {
+    margin-top: 30px;
+}
+[medusa] .testimonials p {
+    text-align: center;
+    font-size: 23px;
+    margin-top: 20px;
+}
+[medusa] .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px auto;
+    padding: 30px 0;
+    justify-content: space-between;
+}
+[medusa] .profileReview {
+    margin: 40px 0;
+    padding: 50px 30px 10px;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));    
+    width: 500px; 
+    position: relative;   
+    border-radius: 10px;
+    color: #f5f6fa;
+}
+
+[medusa] blockquote {
+    font-size: 18px;
+    line-height: 38px;
+    text-align: left;
+    margin: 30px 0;
+    text-indent: 38px;
+}
+[medusa] .fa-quote-left {    
+    font-size: 40px;
+    color:#f5f6fa;    
+    position: absolute;
+    top: 20px;
+    left: 30px;           
+}
+[medusa] .fa-quote-right {
+    font-size: 40px;
+    color: #f5f6fa;
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+}
+[medusa] .profileReview:hover {    
+    background: linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.2)); 
+    border: 3px solid #f5f6fa;
+}
+
+[medusa] .topHead {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+[medusa] .logoMeduska  {    
+    position: absolute;
+    top: 0;
+    left: 0; 
+    width: 50px;
+    height: 50px;   
+}
+[medusa] .textCenter {
+    color: #f5f6fa;
+}
+[medusa] #iconThemeMoon {
+    display: none;
+}
+[medusa] .iconTheme {
+    width: 30px;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;          
+}
+*/
+/*------------------------------bubbles-------------*/
+/*
+[medusa] .bubbles img {
+    width: 50px;
+    animation: bubble 15s linear infinite;
+}
+[medusa] .bubbles {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    bottom: -70px;
+}
+@keyframes bubble {
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    70% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-230vh);
+        opacity: 0;
+    }
+}
+
+
+[medusa] .bubbles img:nth-child(1) {
+    animation-delay: 3s;
+    width: 25px;
+}
+[medusa] .bubbles img:nth-child(2) {
+    animation-delay: 10s;
+}
+[medusa] .bubbles img:nth-child(3) {
+    width: 35px;
+    animation-delay: 5.5s;
+}
+[medusa] .bubbles img:nth-child(4) {
+    animation-delay: 16.7s;
+    width: 55px;
+}
+[medusa] .bubbles img:nth-child(5) {
+    animation-delay: 18.8s;
+    width: 20px;
+}
+[medusa] .bubbles img:nth-child(6) {
+    animation-delay: 12s;
+}
+[medusa] .bubbles img:nth-child(7) {
+    animation-delay: 22s;
+    width: 45px;
+}
+
+[medusa] #iconTheme {
+    width: 30px;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;          
+}
+*/
