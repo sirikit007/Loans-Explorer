@@ -35,7 +35,7 @@
                     <img src="sun.png" id="iconThemeSun" class="iconTheme"> 
                     <img src="moon.png" id="iconThemeMoon" class="iconTheme"> 
 
-                    <div id="contentHome">
+                    <div id="contentHome" hide>
                        
 
                         <div class="topHead">                        
@@ -99,7 +99,7 @@
                         
                         <p>As a licenced mortgage broker we adhere to a privacy policy which is fully compliant with The Privacy Amendment (Enhancing Privacy Protection) Act 2012 with the accompanying regulations (Privacy Regulations 2013) which were released in December 2013 and came into effect on 12 March 2014. You can read our Privacy Policy here</p>
                     </div> 
-                    <div id="contentCalculators" hide>
+                    <div id="contentCalculators" >
                         <div class="topHead">
                             <div class="line">
                                 <span class="line-1"></span><br>
@@ -107,8 +107,56 @@
                                 <span class="line-3"></span>
                             </div>
                             <img src="logo_jellyfish2.png" class="logoMeduska">  
-                            <h1>Calculators</h1>                         
+                            <h1>Loan Repayments</h1>                         
                         </div>
+                       
+                        <div class="profileReviewCalculator">
+                            <form action="">
+                                <div class="inputGroup">
+                                    <input type="number" id="loanAmount" required> 
+                                    <label for="loanAmount"><i class="far fa-dollar-sign"></i>Loan Amount</label>
+                                </div>
+                                <div class="inputGroup">
+                                    <input type="number" id="term" required> 
+                                    <label for="term"><i class="fas fa-vote-yea"></i>Term (Years)</label>
+                                </div>
+                                <div class="inputGroup">
+                                    <input type="number" id="interestRate" required> 
+                                    <label for="interestRate"><i class="fas fa-percentage"></i>Interest Rate</label>
+                                </div>
+                                <button id="buttonCalculate" class="buttonCalculate">Calculate</button>                                
+                                
+                            </form>
+                            <section>
+                                <div class="groupAnswers">
+                                    <div  class="answerSquare">
+                                        <div>
+                                            <i class="far fa-dollar-sign"></i>
+                                            <h4 id="monthlyPayments">1258</h4>
+                                        </div>                                        
+                                        <h4>Monthly Payments</h4>
+                                    </div>
+                                    <div  class="answerSquare">
+                                        <div>
+                                            <i class="fas fa-percentage"></i>
+                                            <h4 id="totalInterest">1258</h4>
+                                        </div>   
+                                        <h4>Total Interest</h4>                                        
+                                    </div>
+
+
+                                    <div class="answerSquare">
+                                        <div>
+                                            <i class="far fa-dollar-sign"></i>
+                                            <h4 id="totalAmount">1258</h4>
+                                        </div>   
+                                        <h4>Total Amound</h4>  
+
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+
                         
                     </div>                   
                     

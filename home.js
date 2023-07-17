@@ -103,4 +103,6 @@ function switchContent(event) {
     }
 }
 
+//--------------------Calculator------------//
+
 
